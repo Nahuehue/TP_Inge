@@ -10,7 +10,7 @@ const TALLERES_DATA = [
     },
     {
         id: 2,
-        nombre: "Alfarería Artesanal",
+        nombre: "Dibujo De Manga Contemporaneo",
         rubro: "Artes",
         info: "Calle Falsa 123, Manuel Alberti",
         lat: -34.5255,
@@ -30,7 +30,7 @@ const TALLERES_DATA = [
         id: 4,
         nombre: "Desarrollo web municpal",
         rubro: "Programcion",
-        info: "Municipalidad Se San Miguel",
+        info: "Municipalidad De San Miguel",
         lat: -34.5422,
         lng: -58.7121,
         esSede: false  
