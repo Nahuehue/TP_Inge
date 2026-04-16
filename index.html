@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoC - Talleres UNGS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-4">
+        <header class="mb-4">
+            <h1 class="display-5 fw-bold text-primary">Portal de Talleres Culturales</h1>
+            <p class="lead">Prueba de Concepto - Entrega 1</p>
+        </header>
+
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="card-title text-secondary">Inscripción de Miembros (RF01)</h5>
+                <form id="form-inscripcion" class="row g-3">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Nombre Colaborador" required>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Nombre del Taller" required>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select" id="tipo-taller">
+                            <option value="sede">Sede UNGS (RF11)</option>
+                            <option value="particular">Particular (RF10)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3" id="contenedor-direccion" style="display: none;">
+                        <input type="text" class="form-control" id="input-direccion" placeholder="Dirección del taller">
+                    </div>
+                    <div class="col-md-1">
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="row" style="height: 600px;">
+            <div class="col-md-4 h-100">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-white py-3">
+                        <strong>Búsqueda de Talleres (RF05)</strong>
+                        <input type="text" id="input-busqueda" class="form-control mt-2" placeholder="Filtrar por nombre o rubro...">
+                    </div>
+                    <div id="lista-talleres" class="list-group list-group-flush overflow-auto">
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-md-8 h-100">
+                <div id="map" class="shadow-sm border rounded h-100"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
