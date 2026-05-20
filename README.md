@@ -33,7 +33,6 @@ El prototipo valida la factibilidad de los siguientes identificadores actualizad
 
 1. Clonar o descargar el contenido del repositorio.
 2. Ejecutar el archivo principal `index.html` en un navegador web. 
-3. **Nota Técnica**: Para simular correctamente el impacto en el sistema (persistencia de datos) sin sufrir bloqueos de seguridad del navegador por CORS, se recomienda levantar el proyecto utilizando un entorno de servidor local (ej: extensión *Live Server* en Visual Studio Code).
 
 ---
 Universidad Nacional de General Sarmiento
