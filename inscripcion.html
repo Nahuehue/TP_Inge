@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción de Talleres - Colaborador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-primary mb-4">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Portal Cultural UNGS - Sección Colaboradores</span>
+            <a href="busqueda.html" class="btn btn-outline-light">Ir a Busqueda (Visitantes)</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card shadow-sm max-w-lg mx-auto">
+            <div class="card-body">
+                <h5 class="card-title text-secondary mb-3">Formulario de Inscripcion</h5>
+                
+                <div id="mensaje-alerta"></div>
+
+                <form id="form-inscripcion" class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre Colaborador</label>
+                        <input type="text" id="colab-nombre" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre del Taller</label>
+                        <input type="text" id="taller-nombre" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Rubro</label>
+                        <select id="taller-rubro" class="form-select" required>
+                            <option value="Musica">Música</option>
+                            <option value="Teatro">Teatro</option>
+                            <option value="Cultura">Cultura</option>
+                            <option value="Oficios">Oficios</option>
+                            <option value="Otro">Otro...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Días de Cursada</label>
+                        <input type="text" id="taller-dias" class="form-control" placeholder="Ej: Lunes y Martes" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Localidad</label>
+                        <input type="text" id="taller-localidad" class="form-control" placeholder="Ej: San Miguel" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Tipo de Espacio</label>
+                        <select class="form-select" id="tipo-taller">
+                            <option value="sede">Sede Central UNGS </option>
+                            <option value="particular">Particular </option>
+                        </select>
+                    </div>
+                    <div class="col-12" id="contenedor-direccion" style="display: none;">
+                        <label class="form-label">Dirección Particular Obligatoria</label>
+                        <input type="text" class="form-control" id="input-direccion" placeholder="Calle, Número y Localidad">
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-success px-4">Confirmar Registro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/inscripcion.js"></script>
+</body>
+</html>
